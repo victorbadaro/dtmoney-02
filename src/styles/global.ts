@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     --text-body: #969CB3;
     --background: #F0F2F5;
     --shape: #FFFFFF;
+    --input-background: #E7E9EE;
   }
 
   * {
@@ -74,5 +75,19 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 576px;
     border-radius: 0.25rem;
     background-color: var(--background);
+  }
+
+  .react-modal-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    border: 0;
+    background-color: transparent;
+
+    transition: filter 200ms;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
   }
 `;
